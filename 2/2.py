@@ -7,7 +7,7 @@ valid = 0
 
 #Parse the file for the needed values
 for line in f:
-    #voodoo magic by Andrew
+    #voodoo magic
     linelist = line.split('-')
     minimum = int(linelist[0])
     linelist = linelist[1].split(' ')
@@ -39,7 +39,7 @@ valid = 0
 
 #Parse the file for the needed values
 for line in f:
-    #voodoo magic by Andrew
+    #voodoo magic
     linelist = line.split('-')
     minimum = int(linelist[0])
     linelist = linelist[1].split(' ')
