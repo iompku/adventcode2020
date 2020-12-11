@@ -6,6 +6,7 @@ def arrayV(char):
         return 1
     return 0
 
+# part 1 calculation
 def calcValuePart1(array, i, j):
     sum = 0
     #corner cases, don't want to index outside array
@@ -153,25 +154,25 @@ valid = 0
 # values read in as L or .
 array = []
 #2d array of weights rather than thing
-#values = [][]
+#values = [][] # changed mind, not doing this
 
 # parse input file, add to list 
 for line in f:
     array.append(line.strip())
-    v = []
-    for c in line.strip():
-        if ('L' == c):
-            v.append(0)
-        elif ('.' == c):
-            v.append(0)
+    #v = []
+    #for c in line.strip():
+    #    if ('L' == c):
+    #        v.append(0)
+    #    elif ('.' == c):
+    #        v.append(0)
     #values.append(v)
 
 count = 0
-# do game of life shit
+# do game of life stuff
 while (True):
     #print(array)
     i = 0
-    newArray = []
+    newArray = []     #must create new array for next loop through
     #newvalues = [][]
     for line in array:
         st = ''
@@ -199,7 +200,7 @@ while (True):
         print("FOUND IT!")
         break
     array = newArray
-    #if (count > 3000000):
+    #if (count > 3000000):  # using to see for time-out, never converge to a final array
         #break
                 
 print(array)
