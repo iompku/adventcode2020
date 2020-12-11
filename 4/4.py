@@ -44,7 +44,7 @@ for line in f:
             passport['ecl'] != '' and
             passport['pid'] != ''):
             #count += 1 #from part 1
-            # This is extra data checking added to part 2, holy fuck
+            # This is extra data checking added to part 2, ugly
             if (int(passport['byr']) > 1919 and int(passport['byr']) < 2003 and
                 int(passport['iyr']) > 2009 and int(passport['iyr']) < 2021 and
                 int(passport['eyr']) > 2019 and int(passport['eyr']) < 2031 and
