@@ -48,7 +48,7 @@ print("cont 1 diffs = " + str(cont1diffs))
 
 # for every +3, those are required values that cannot be removed.
 # if there is a +1 between two +3s, they must both remain in every pattern
-# it is only when we reach 3 +1s in a row when we are able to remove one
+# it is only when we reach 2 or more +1s in a row when we are able to remove one
 # and still ahere to requiremetns
 # eg
 # 30 33 36
@@ -56,7 +56,7 @@ print("cont 1 diffs = " + str(cont1diffs))
 # 30 33 34 37
 # still must include all
 # 30 33 34 35 38
-# we are able to use this sequence and 20 33 35 38 and meet requirements
+# we are able to use this sequence and 30 33 35 38 (remove 34) and meet requirements
 # taking a look at the number of continuous +1s, the most we need to discover
 # is +4 s inbetween each. In this case, there are 3 potentially removable numbers
 
